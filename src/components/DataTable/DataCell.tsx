@@ -12,8 +12,10 @@ const Wrapper = styled.div<Props>`
   align-items: flex-start;
   flex-basis: ${(props) => props.width};
   height: 100%;
-  padding: 5px 0;
+  padding: 10px;
   box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 `;
 

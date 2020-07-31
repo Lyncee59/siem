@@ -10,8 +10,8 @@ const stretchAnimation = keyframes`
 const Container = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 100px;
-  height: 40px;
+  width: 75px;
+  height: 25px;
   text-align: center;
   font-size: 10px;
 `;

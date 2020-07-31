@@ -7,10 +7,14 @@ type Props = {
 };
 
 const InputWrapper = styled.input<Props>`
-  width: 400px;
+  width: 600px;
   height: 35px;
   padding: 5px;
-  border: 1px solid black;
+  border: 1px solid #cdcdcd;
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 const Input: React.FC<Props> = ({ onChange, value }) => {

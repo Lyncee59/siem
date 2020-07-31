@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "apollo:generate": "apollo codegen:generate --excludes=node_modules/* --includes=**/*.tsx --endpoint http://localhost:4000 --target typescript --tagName gql --outputFlat src/generated --passthroughCustomScalars"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@apollo/client": "^3.0.2",
+    "apollo": "2.30.1",
     "antd": "^4.3.4",
     "formik": "^2.1.4",
     "formik-antd": "^2.0.1",

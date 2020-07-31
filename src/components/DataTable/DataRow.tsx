@@ -11,12 +11,11 @@ const Wrapper = styled.div<Props>`
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  min-height: ${(props) => (props.type == "header" ? "50px" : "25px")};
+  min-height: ${(props) => (props.type == "header" ? "50px" : "35px")};
   cursor: ${(props) => (props.type == "header" ? "default" : "pointer")};
-  overflow: hidden;
 
   &:nth-child(odd) {
-    background: #cdcdcd;
+    background: #f0f0f0;
   }
 
   &:nth-child(even) {
